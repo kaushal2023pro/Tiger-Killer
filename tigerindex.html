@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiger-killer-game</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script src="app.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <div class="controls">  
+    <div class="sounds">
+      Sound:
+      <div class="soundtoggling">
+        <label for="sound-toggle" class="switch" title="Toggle sounds">
+          <input type="checkbox" class="sound-toggle" id="sound-toggle" name="sound-toggle"/>
+          <span class="switch-toggle"></span>
+          <span class="text-toggle"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="location">
+      <span class="location-text">Tiger-Killer</span>
+      <div class="planets">
+        <button class="planet" id="earth" title="Earth"></button>
+        <button class="planet" id="moon" title="Moon"></button>
+      </div>
+	  
+	 
+       
+	   
+    </div>
+
+    <div class="scoring">
+      <h3 class="score">Score: <span class="score-number">0</span></h2>
+      <h3 class="high-score">High score: <span class="high-score-number"></span></h2>
+    </div>    
+  </div>
+
+
+  <div class="game">
+    <div class="background">
+      <div class="playing">
+        <p class="instructions" style="color: white;background-color: black;padding: 10px 10px; border-radius: 5px;border: 2px dotted red;">Press spacebar or tap on the background to make the superman jump</p>
+        <h2 class="alert"></h2>
+        <button class="play" title="Play">Play</button>
+      </div>
+    </div>
+  </div>
+  <div class="dino"></div>
+  <div class="obstacles"></div>
+  </div>
+ 
+
+  <audio class="jump-sound">
+    <source src="jump.wav">
+  </audio>
+  <audio class="game-over-sound">
+    <source src="videogame-death-sound-43894.mp3">
+  </audio>
+  <a href="index.html">START</a>
+</body>
+</html>
